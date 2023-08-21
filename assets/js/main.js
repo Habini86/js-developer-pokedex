@@ -5,7 +5,7 @@ const maxRecords = 151
 const limit = 10
 let offset = 0;
 
-function convertPokemonToLi(pokemon) {
+const convertPokemonToLi = (pokemon) => {
     return `
         <li class="pokemon ${pokemon.type}">
             <span class="number">#${pokemon.number}</span>
@@ -23,7 +23,7 @@ function convertPokemonToLi(pokemon) {
     `
 }
 
-function loadPokemonItens(offset, limit) {
+const loadPokemonItens = (offset, limit) => {
     pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
         const newHtml = pokemons.map(convertPokemonToLi).join('')
         pokemonList.innerHTML += newHtml
