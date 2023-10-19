@@ -1,0 +1,249 @@
+.card-title {
+  flex-direction: column;
+  color: #fff;
+  height: auto;
+}
+
+.card-title,
+.card-title header button,
+.card-title .types,
+.card-title .detail,
+.card-details {
+  display: flex;
+}
+
+.card-title header button,
+.card-title header h1,
+.card-title .types,
+.card-details details[open] {
+  padding: 0;
+}
+
+.card-title .types,
+.card-details details[open] summary,
+.details-pokemon th h3 {
+  margin: 0;
+}
+
+.card-title header {
+  display: inherit;
+  flex-direction: inherit;
+}
+
+.card-title header button {
+  user-select: all;
+  border: none;
+  width: 0;
+}
+
+.card-title header button span {
+  margin: 20px 0 0 -4px;
+  align-self: flex-start;
+  color: #fff;
+}
+
+.card-title header h1 {
+  font-size: 1.5rem;
+  margin: 25px 0 0 0;
+  text-transform: capitalize;
+}
+
+.card-title header .number {
+  align-self: flex-end;
+  opacity: 0.8;
+  font-size: 0.825rem;
+}
+
+.card-title .types {
+  list-style: none;
+  align-self: flex-start;
+}
+
+.card-title .types .type + .type {
+  margin-left: 0.3rem;
+}
+
+.card-title .detail {
+  flex-direction: row;
+  justify-content: center;
+  user-select: none;
+}
+
+.card-title .detail img {
+  margin-top: 40px;
+  margin-bottom: -50px;
+  max-width: 180px;
+  max-height: 200px;
+}
+
+.card-details {
+  flex-direction: row;
+  height: auto;
+  background-color: #fff;
+  border-top-left-radius: 30px 30px;
+  border-top-right-radius: 30px 30px;
+  justify-content: space-around;
+}
+
+.card-details details {
+  margin-top: 50px;
+}
+
+.card-details details summary {
+  list-style: none;
+  font-weight: 400;
+  color: #8a8a8a;
+}
+
+.card-details details[open] summary {
+  padding-bottom: 8px;
+  border-bottom: 2px solid #7181e1;
+  font-weight: 500;
+  color: inherit;
+}
+
+.card-details details[open] .details-pokemon {
+  margin-top: 12px;
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  width: 100vw;
+  height: 60vh;
+}
+
+.details-pokemon .span-cell,
+.details-pokemon th {
+  padding-left: 24px;
+  width: 80.91px;
+  white-space: nowrap;
+}
+
+.details-pokemon th h3 {
+  font-weight: bolder;
+  padding-top: 10px;
+  opacity: 0.8;
+  text-align: left;
+  width: 80.91px;
+}
+
+.details-pokemon table {
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+
+.details-pokemon td {
+  font-weight: 400;
+}
+
+.details-pokemon tr + tr td {
+  padding-top: 20px;
+}
+
+.details-pokemon tr td + td {
+  padding-left: 15vw;
+}
+
+.details-pokemon .span-cell {
+  color: #a0a4a8;
+}
+
+.details-pokemon .table-title tr td + td {
+  padding-left: 6.6vw;
+}
+
+#details-2 tr td + td {
+  text-align: center;
+}
+
+@media screen and (min-width: 375px) {
+  .card-title,
+  .card-details {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .card-details details[open] .details-pokemon {
+    width: 90vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .details-pokemon .table-title tr td + td {
+    padding-left: 8.3vw;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .card-title,
+  .card-details {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .card-details details[open] .details-pokemon {
+    width: 80vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .details-pokemon .table-title tr td + td {
+    padding-left: 8.8vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card-title,
+  .card-details {
+    width: 70vw;
+    margin: 0 auto;
+  }
+  .card-details details[open] .details-pokemon {
+    width: 70vw;
+    left: 50%;
+    transform: translateX(-50%);
+    align-self: center;
+  }
+
+  .details-pokemon table {
+    min-width: 70%;
+    margin: 20px auto 0 auto;
+  }
+  .details-pokemon .table-title tr td + td {
+    padding-left: 12vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card-title,
+  .card-details {
+    border-radius: 0;
+    border-top-left-radius: 30px 30px;
+    border-top-right-radius: 30px 30px;
+    width: 60vw;
+    margin: 0 auto;
+  }
+  .card-details details[open] .details-pokemon {
+    width: 60vw;
+    left: 50%;
+    transform: translateX(-50%);
+    align-self: center;
+  }
+  .details-pokemon .table-title tr td + td {
+    padding-left: 13vw;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .card-title,
+  .card-details {
+    border-radius: 0;
+    border-top-left-radius: 30px 30px;
+    border-top-right-radius: 30px 30px;
+    width: 50vw;
+    margin: 0 auto;
+  }
+
+  .card-details details[open] .details-pokemon {
+    width: 50vw;
+    left: 50%;
+    transform: translateX(-50%);
+    align-self: center;
+  }
+  .details-pokemon .table-title tr td + td {
+    padding-left: 14vw;
+  }
+}
