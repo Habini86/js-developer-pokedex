@@ -121,6 +121,10 @@ const loadPokemons = () => {
     loadPokemonItems(offset, limit, cachedPokemons)
     attachClickEventsToPokemon()
     removeLoadMoreButtonIfLastPage(qtdRecordsWithNextPage)
+    window.location.search !== "" && offset == 0
+      ? (offset = parseInt(offset_url))
+      : (offset = offset)
+    limit = 10
   } else if (cachedPokemons.length < maxRecords) {
     const newLimit =
       qtdRecordsWithNextPage >= maxRecords ? maxRecords - offset : limit
