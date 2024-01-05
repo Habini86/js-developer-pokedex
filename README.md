@@ -1,7 +1,7 @@
 
 # Trilha JS Developer - Pokedex
 
-O projeto foi um aprimoramento de um projeto existente.
+O projeto foi um aprimoramento de um projeto existente, onde o original está na Branch [projeto-base](https://github.com/Habini86/js-developer-pokedex/tree/projeto-base).
 
 ## Funcionalidades
 
